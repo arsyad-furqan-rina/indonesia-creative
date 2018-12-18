@@ -1,0 +1,46 @@
+.content .intro {
+  width: 100vw;
+  height: 100vh;
+}
+
+.content .intro .carousel-item {
+  width: 100vw;
+  height: 100vh;
+}
+
+.content .intro .carousel-item .img-carousel {
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content .intro .carousel-item .img-carousel.photo1 {
+  background-image: url("/assets/images/menu-img/clients.jpg");
+}
+
+.content .intro .carousel-item .img-carousel.photo2 {
+  background-image: url("/assets/images/menu-img/work.jpg");
+}
+
+.content .intro .carousel-item .img-carousel.photo3 {
+  background-image: url("/assets/images/menu-img/locations.jpg");
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
