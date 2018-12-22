@@ -4,7 +4,7 @@
 
 /* pages */
 @import url("./pages/index.css");
-@import url("./pages/about.css");
+@import url("./pages/case-studies.css");
 
 /* universal */
 @import url("./buttons.css");
@@ -16,6 +16,7 @@ body {
   margin: 0;
   /* font-family: 'Staatliches', cursive; */
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
 
 .content {
@@ -25,4 +26,17 @@ body {
 .row {
   margin-right: 0;
   margin-left: 0;
+}
+
+.parallax-window {
+  min-height: 100vh;
+  background: transparent;
+}
+
+img.parallax-slider {
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
 }

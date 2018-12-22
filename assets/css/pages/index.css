@@ -3,49 +3,6 @@
   height: 100vh;
 }
 
-.content .intro .carousel-item {
-  width: 100vw;
-  height: 100vh;
-}
-
-.content .intro .carousel-item .img-carousel {
-  height: 100vh;
-  width: 100vw;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  filter: brightness(80%);
-}
-
-.content .intro .carousel-item .img-carousel.photo1 {
-  background-image: url("/assets/images/menu-img/clients.jpg");
-}
-
-.content .intro .carousel-item .img-carousel.photo2 {
-  background-image: url("/assets/images/menu-img/work.jpg");
-}
-
-.content .intro .carousel-item .img-carousel.photo3 {
-  background-image: url("/assets/images/menu-img/jobs.jpg");
-}
-
-.carousel-fade .carousel-inner .item {
-  opacity: 0;
-  -webkit-transition-property: opacity;
-  -moz-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
-}
-.carousel-fade .carousel-inner .active {
-  opacity: 1;
-}
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
-
 .content .intro .intro-content {
   position: absolute;
   top: 0;
@@ -54,26 +11,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  font-family: "Staatliches", cursive;
+  color: rgb(83, 83, 83);
+  /* font-family: "Staatliches", cursive; */
+  font-family: "Roboto", sans-serif;
 }
 
 .content .intro .intro-content .text-intro h1 {
-  font-size: 4rem;
-  letter-spacing: 5px;
+  font-size: 3.8rem;
+  font-weight: 700;
 }
 
 .content .intro .intro-content .text-intro .show-h1 {
-  margin: 0;
-  margin-bottom: -25px;
-  padding: 0;
+  margin: -15px 0;
+  /* margin-left: 100px; */
+  z-index: 3;
 }
 
-.content .intro .intro-content .text-intro .text-marquee.show-h1 {
+.content .intro .intro-content .text-intro .text-marquee {
   width: 30vw;
+  margin-left: -5vw;
+  /* color: rgb(10, 128, 207); */
   color: rgb(226, 67, 7);
-}
-
-.content .intro .intro-content .text-intro .text-marquee .slick-slide {
-  border: 0;
+  pointer-events: none;
 }

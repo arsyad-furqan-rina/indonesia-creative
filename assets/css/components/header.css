@@ -29,7 +29,7 @@
 .header .ham-menu .text-menu {
   font-size: 0.7rem;
   margin-right: 10px;
-  color: #fff;
+  color: #282828;
   margin-left: -50px;
 }
 
@@ -45,7 +45,8 @@
   height: 100vh;
   z-index: -1;
   color: white;
-  font-family: "Staatliches", cursive;
+  /* font-family: "Staatliches", cursive; */
+  font-family: "Roboto", sans-serif;
   transition-duration: 0.5s;
   transition-timing-function: 0.5s;
 }
@@ -57,7 +58,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  letter-spacing: 5px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -95,6 +95,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.menu-sheet .row .menu-items .banner h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 2px;
 }
 
 .menu-sheet .row .menu-items .banner:hover {
