@@ -73,15 +73,10 @@
       </div>
     </header>
     <main class="content">
-      <div class="intro">
-        <div
-          class="parallax-window"
-          data-src="/assets/images/menu-img/work.jpg"
-          data-pos-y="center"
-          data-parallax
-          data-bleed="100"
-          data-image-blur="100"
-        ></div>
+      <div class="intro parallax-window">
+        <div class="parallax-slider">
+          <img src="/assets/images/menu-img/work.jpg" width="100%" />
+        </div>
         <div class="intro-content">
           <div class="text-intro">
             <h1 class="show-h1">A DIGITAL AGENCY</h1>
@@ -96,14 +91,21 @@
           </div>
         </div>
       </div>
-      <div class="what">
-        <div
-          class="parallax-window"
-          data-src="/assets/images/menu-img/people.jpg"
-          data-pos-y="center"
-          data-parallax
-          data-bleed="100"
-        ></div>
+      <div class="what parallax-window">
+        <div class="parallax-slider">
+          <img
+            src="/assets/images/background/our-team-background.jpg"
+            width="100%"
+          />
+        </div>
+        <div class="what-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 no-margin border-right"><h1>hello</h1></div>
+              <div class="col-6 no-margin"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <script
@@ -115,10 +117,6 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
       integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
       crossorigin="anonymous"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
@@ -173,7 +171,8 @@
         adaptiveHeight: true
       });
       $(".parallax-window").parallax({
-        speed: 0.3
+        speed: -0.2,
+        sliderSelector: ">.parallax-slider"
       });
     </script>
   </body>
