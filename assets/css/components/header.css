@@ -8,17 +8,22 @@
 }
 
 .header .logo {
-  padding: 13px;
-  width: 55px;
+  padding: 10px;
+  width: 6vw;
+  margin-top: 10px;
+  margin-left: 15px;
+  opacity: 1;
+  transition-duration: 0.5s;
+  transition-timing-function: 0.5s;
 }
 
 .header .ham-menu {
-  padding: 13px;
   width: 4vw;
   display: flex;
   align-items: center;
   text-decoration: none;
   cursor: pointer;
+  margin-top: -40px;
 }
 
 .header .ham-menu .text-menu {

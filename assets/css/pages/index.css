@@ -14,6 +14,7 @@
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  filter: brightness(80%);
 }
 
 .content .intro .carousel-item .img-carousel.photo1 {
@@ -25,7 +26,7 @@
 }
 
 .content .intro .carousel-item .img-carousel.photo3 {
-  background-image: url("/assets/images/menu-img/locations.jpg");
+  background-image: url("/assets/images/menu-img/jobs.jpg");
 }
 
 .carousel-fade .carousel-inner .item {
@@ -43,4 +44,36 @@
   left: 0;
   opacity: 0;
   z-index: 1;
+}
+
+.content .intro .intro-content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Staatliches", cursive;
+}
+
+.content .intro .intro-content .text-intro h1 {
+  font-size: 5rem;
+  letter-spacing: 5px;
+}
+
+.content .intro .intro-content .text-intro .show-h1 {
+  margin: 0;
+  margin-bottom: -25px;
+  padding: 0;
+}
+
+.content .intro .intro-content .text-intro .text-marquee.show-h1 {
+  width: 30vw;
+  color: rgb(226, 67, 7);
+}
+
+.content .intro .intro-content .text-intro .text-marquee .slick-slide {
+  border: 0;
 }

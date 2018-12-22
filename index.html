@@ -21,14 +21,19 @@
       integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="/assets/css/index.css" />
   </head>
   <body>
     <header>
       <div class="header">
-        <a href="/" class="logo">
+        <a href="/" class="logo" id="logo-header">
           <img
-            src="/assets/images/logo.svg"
+            src="/assets/images/logo-text-black.png"
             width="100%"
             alt="Logo Indonesia Creative"
           />
@@ -86,6 +91,18 @@
             </div>
           </div>
         </div>
+        <div class="intro-content">
+          <div class="text-intro">
+            <h1 class="show-h1">BUILD TO</h1>
+            <h1 class="show-h1">MAKE A</h1>
+            <div class="text-marquee show-h1">
+              <h1>COLABORATE</h1>
+              <h1>CREATIVE</h1>
+              <h1>GREAT</h1>
+            </div>
+            <h1 class="show-h1">DIFFERENCE</h1>
+          </div>
+        </div>
       </div>
     </main>
     <script
@@ -103,6 +120,10 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script>
       var menuSheet = false;
       $("#ham-menu").click(function() {
@@ -114,6 +135,9 @@
           $("#ham-menu")
             .removeClass("spinning")
             .addClass("spinning-result");
+          $("#logo-header")
+            .css("opacity", 0)
+            .css("z-index", -1);
         } else {
           $(".menu-sheet")
             .css("opacity", 0)
@@ -121,10 +145,23 @@
           $("#ham-menu")
             .removeClass("spinning-result")
             .addClass("spinning");
+          $("#logo-header")
+            .css("opacity", 1)
+            .css("z-index", 9);
         }
       });
       $("#carousel-intro").carousel({
         interval: 5000
+      });
+      $(".text-marquee").slick({
+        vertical: true,
+        autoplay: true,
+        arrows: false,
+        autoplaySpeed: 1000,
+        speed: 300,
+        pauseOnHover: false,
+        pauseOnPause: false,
+        focusOnSelect: false
       });
     </script>
   </body>
