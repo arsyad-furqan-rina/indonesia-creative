@@ -29,11 +29,6 @@ body {
   margin-left: 0;
 }
 
-.parallax-window {
-  min-height: 100vh;
-  background: transparent;
-}
-
 .parallax-slider img {
   /* -webkit-filter: blur(3px);
   -moz-filter: blur(3px);
