@@ -34,10 +34,11 @@ body {
   background: transparent;
 }
 
-img.parallax-slider {
-  /* -webkit-filter: blur(3px); */
-  /* -moz-filter: blur(3px); */
-  /* -o-filter: blur(3px);
-  -ms-filter: blur(3px); */
-  /* filter: blur(3px); */
+.parallax-slider img {
+  /* -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px); */
+  /* filter: brightness(80%); */
 }
