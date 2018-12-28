@@ -1,0 +1,5 @@
+.owl-carousel .item {
+  width: 19wh;
+  height: 50vh;
+  box-shadow: 12px 15px 51px 0px transparentize(black, 0.65);
+}

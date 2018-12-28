@@ -4,7 +4,7 @@
 }
 
 .content .intro.parallax-window {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.493);
 }
 
 .content .intro .intro-content {
@@ -23,7 +23,7 @@
 }
 
 .content .intro .intro-content .text-intro .show-h1 {
-  margin: -15px 0;
+  margin: -14px 0;
   /* margin-left: 100px; */
   z-index: 3;
 }
@@ -31,9 +31,14 @@
 .content .intro .intro-content .text-intro .text-marquee {
   width: 30vw;
   margin-left: -5vw;
+  margin-bottom: 2px;
   /* color: rgb(10, 128, 207); */
   color: rgb(226, 67, 7);
   pointer-events: none;
+}
+
+.content .intro .intro-content .text-intro .text-marquee .slick-slide {
+  height: 10vh;
 }
 
 .content .what {
@@ -77,4 +82,11 @@
   line-height: 30px;
   letter-spacing: 1px;
   font-size: 1rem;
+}
+
+.content .our-work {
+  background-image: url("/assets/images/background/our-work-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10vh 0;
 }
