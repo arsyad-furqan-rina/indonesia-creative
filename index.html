@@ -149,7 +149,13 @@
         <div class="filter-white">
           <div class="owl-carousel owl-theme">
             <div class="owl-panel-item regular">
-              <h4 style="flex-grow:1">1</h4>
+              <div class="plus">
+                <img
+                  src="/assets/images/expand-button-white.svg"
+                  width="10px"
+                  alt="expand-button"
+                />
+              </div>
               <label class="foot">Amberegul</label>
             </div>
             <div class="owl-panel-item title">
@@ -223,6 +229,9 @@
       $("#carousel-intro").carousel({
         interval: 5000
       });
+      setTimeout(function() {
+        $(".text-marquee").css("display", "block");
+      }, 1500);
       $(".text-marquee").slick({
         vertical: true,
         autoplay: true,
