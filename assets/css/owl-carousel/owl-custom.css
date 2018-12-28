@@ -1,5 +1,44 @@
-.owl-carousel .item {
-  width: 19wh;
-  height: 50vh;
-  box-shadow: 12px 15px 51px 0px transparentize(black, 0.65);
+.owl-panel-item {
+  background: red;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  width: 14vw;
+  margin: 3rem 0.65rem;
+  box-shadow: 12px 15px 51px 0px rgba(0, 0, 0, 0.65);
+  border-radius: 2px;
+}
+
+.owl-panel-item.regular {
+  display: flex;
+  flex-direction: column;
+}
+
+.owl-panel-item.regular > label.foot {
+  width: 100%;
+  height: auto;
+  font-size: 0.62rem;
+  font-weight: 500;
+  padding: 0.6rem;
+  text-transform: uppercase;
+  background-color: #282828;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  border-radius: 0 0 2px 2px;
+}
+
+.owl-panel-item.title {
+  padding: 0 1.5vw;
+  background-color: #282828;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.owl-panel-item.title h2 {
+  font-weight: 700;
+  margin: -10px 0;
+  letter-spacing: 2px;
 }

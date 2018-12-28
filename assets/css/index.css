@@ -44,3 +44,8 @@ body {
   filter: blur(3px); */
   /* filter: brightness(200%); */
 }
+
+.filter-white {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1.8rem 0;
+}
