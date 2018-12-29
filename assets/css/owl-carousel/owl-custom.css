@@ -45,8 +45,8 @@
   justify-content: center;
   margin-bottom: 0;
   border-radius: 0 0 2px 2px;
-  transition-duration: 0.25s;
-  transition-timing-function: 0.25s;
+  transition-duration: 0.5s;
+  transition-timing-function: 0.5s;
   opacity: 1;
 }
 
@@ -98,8 +98,8 @@ h2 {
   display: flex;
   justify-content: flex-end;
   opacity: 0;
-  transition-duration: 0.25s;
-  transition-timing-function: 0.25s;
+  transition-duration: 0.5s;
+  transition-timing-function: 0.5s;
 }
 
 .owl-panel-item.regular:hover > .banner > .top > label {
@@ -123,8 +123,8 @@ h2 {
   margin: -10px 0;
   letter-spacing: 2px;
   opacity: 0;
-  transition-duration: 0.25s;
-  transition-timing-function: 0.25s;
+  transition-duration: 0.5s;
+  transition-timing-function: 0.5s;
 }
 
 .owl-panel-item.regular:hover > .banner > .bottom h2 {
