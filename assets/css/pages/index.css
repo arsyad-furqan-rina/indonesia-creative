@@ -36,8 +36,6 @@
   /* color: rgb(10, 128, 207); */
   color: rgb(226, 67, 7);
   pointer-events: none;
-  display: none;
-  transition: opacity 1s ease-out;
 }
 
 .content .intro .intro-content .text-intro .text-marquee .slick-slide {
